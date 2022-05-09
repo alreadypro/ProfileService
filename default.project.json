@@ -1,4 +1,4 @@
 {
     "name": "ProfileService",
-    "tree": { "$path": "ProfileService.lua" }
+    "tree": { "$path": "src" }
 }
