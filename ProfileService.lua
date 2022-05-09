@@ -790,6 +790,7 @@ local function StandardProfileUpdateAsyncDataStore(profile_store, profile_key, u
 					if is_get_call == true then
 						local get_data, get_key_info
 						if version ~= nil then
+							-- selene: allow(shadowing)
 							local success, error_message = pcall(function()
 								get_data, get_key_info = profile_store._global_data_store:GetVersionAsync(profile_key, version)
 							end)
